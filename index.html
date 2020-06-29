@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/icons/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Expense</title>
+</head>
+<body>
+    <main>
+        <div class="container">
+            <h1>EXPENSE TRACKER</h1>
+            <!---  The first row   ---->
+            <div class="row">
+                <form action="" method="post" class="formulaire" id="budget-form">
+                    <div class="form-group">
+                        <label for="budget" class="form-label">Please Enter your Budget</label>
+                        <input id="budget-input" type="number" class="form-control" style="border: 1px solid #28a745">
+                    </div>
+                    <button type="submit" id="budget-submit" class="btn" style="border: 1px solid #28a745">Calculate</button>
+                </form>
+                <div class="case-value">
+                    <div class="budget-case">
+                        <h4>BUDGET</h4>
+                        <i class="fas fa-money-bill-alt"></i>
+                        <h4 id="budget"><span>$ </span><span id="budget-amount">0</span></h4>
+                    </div>
+                    <div class="expense-case">
+                        <h4>EXPENSES</h4>
+                        <i class="fas fa-money-check"></i>
+                        <h4 id="expense"><span>$ </span><span id="expense-amount">0</span></h4>
+                    </div>
+                    <div class="balance-case">
+                        <h4>BALANCE</h4>
+                        <i class="fas fa-dollar-sign"></i>
+                        <h4 id="balance"> <span>$ </span><span id="balance-amount">0</span></h4>
+                    </div>
+                </div>
+            </div>
+
+
+            <!---  The first row   ---->
+            <div class="row">
+                    <form action="" method="post" class="formulaire" style="border: 1px solid #dc3545" id="expense-form">
+                        <div class="form-group">
+                            <label for="expense" class="form-label">Please Enter your Expense</label>
+                            <input type="text" class="form-control" id="expense-input" style="border: 1px solid #dc3545">
+                        </div>
+                        <div class="form-group">
+                            <label for="amount" class="form-label">Please Enter Expense Amount</label>
+                            <input type="text" class="form-control" id="amount-input" style="border: 1px solid #dc3545">
+                        </div>
+                        <button type="submit" id="expense-submit" class="btn" style="border: 1px solid #dc3545">Add Expense</button>
+                    </form>
+
+                    <!-- expense list -->
+                    <div class="expense-list" id="expense-list">
+
+                        <div class="expense-list__info">
+                            <h5>expense title</h5>
+                            <h5>expense value</h5>
+                            <h5></h5>
+                        </div>
+                    </div>
+
+            </div>
+        </div>
+    </main>
+
+
+
+
+    <script src="js/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,99 @@
+* {
+    box-sizing: border-box;
+}
+html body {
+    margin: 0;
+    padding: 0;
+}
+.container {
+    max-width: 1400px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+
+.row {
+    display: flex;
+    margin-bottom: 3rem;
+}
+.formulaire {
+    padding: 10px;
+    border: 1px solid #28a745;
+}
+.case-value{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+.case-value > * {
+    padding:0 20px;
+    margin: 0 20px;
+    text-align: center;
+}
+.case-value h4 {
+    font-size: 20px;
+    margin: 0;
+}
+.case-value i {
+    font-size: 40px;
+    margin: 10px 0;
+    color: rgb(5, 36, 121);
+}
+.case-value h3 {
+    font-size: 36px;
+    margin: 0;
+}
+.form-control {
+    width: 400px;
+    height: 30px;
+    margin-bottom: 5px;
+    border: none;
+}
+.form-label {
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+.form-group {
+    display: flex;
+    flex-direction: column;
+    margin: 10px 0;
+}
+.btn {
+    border: none;
+    padding: 10px 20px;
+}
+.expense-list {
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 0;
+}
+.expense-list__info {
+    display: flex;
+    justify-content: space-between;
+    text-transform: uppercase;
+}
+.expense-list__info h5 {
+    font-size: 1.6rem;
+    margin-top: 0;
+    margin-right: 40px;
+    margin-left: 40px;
+}
+.expense-list__info h5:nth-child(1) {
+    margin-left: 0 !important;
+}
+
+#budget, #expense, #balance {
+    font-size: 2rem;
+}
+#budget {
+    color: #28a745;
+}
+#expense, #balance {
+    color: #dc3545;
+}
+.expense-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    font-size: 1.6rem;
+}
